@@ -19,18 +19,18 @@ public class Factorial {
 		stdIn = new Scanner(System.in);
 
 		int x = stdIn.nextInt();
-
-		System.out.println(String.format("「%d」の階乗は「%d」です。", x, factorial(x)));
+		Factorial factorial= new Factorial();
+		System.out.println(String.format("「%d」の階乗は「%d」です。", x, factorial.calc(x)));
 	}
 
-	private static int factorial(int n) {
+	private int calc(int n) {
 		if (n > 0) {
 			if (n == 1) {
 				System.out.println(n);
 			} else {
 				System.out.print(n + " x ");
 			}
-			return n * factorial(n - 1);
+			return n * calc(n - 1);
 		} else {
 			return 1;
 		}
