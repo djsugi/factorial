@@ -22,7 +22,7 @@ public class Fibonacci {
 
     public void print(int n) {
         for (int i = 0; i < n; i++) {
-            System.out.println(String.format("%d回目 : %s", i+1,String.valueOf(calcRecursive(i + 1))));
+            System.out.println(String.format("%d回目 : %s", i+1,String.valueOf(calc(i + 1))));
         }
     }
 

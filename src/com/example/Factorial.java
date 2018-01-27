@@ -25,11 +25,8 @@ public class Factorial {
 
 	private int calc(int n) {
 		if (n > 0) {
-			if (n == 1) {
-				System.out.println(n);
-			} else {
-				System.out.print(n + " x ");
-			}
+			if (n == 1) { System.out.println(n); } 
+			else { System.out.print(n + " x "); }
 			return n * calc(n - 1);
 		} else {
 			return 1;
